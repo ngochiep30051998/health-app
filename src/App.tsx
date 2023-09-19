@@ -1,12 +1,9 @@
-import { useState } from 'react'
 import './App.scss'
-import Header from './components/layouts/header/Header'
+import Router from './routing'
 
 function App() {
 
-  return (
-    <Header/>
-  )
+  return <Router/>
 }
 
 export default App

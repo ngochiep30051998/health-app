@@ -1,0 +1,16 @@
+@import '../../../../../public/assets/scss/variables';
+.footer {
+    &-container {
+
+    }
+    &-item {
+        color: $light;
+        font-family: $font-family;
+        font-size: 11px;
+        font-style: normal;
+        // font-weight: 300;
+        /* 145.455% */
+        letter-spacing: 0.033px;
+        padding-right: 45px;
+    }
+}

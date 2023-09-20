@@ -9,7 +9,7 @@ export default function Header() {
                         <img src="/assets/images/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
                     </a>
 
-                    <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                    <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                             <li className="menu-item flex">
                                 <img src="/assets/images/icons/icon_memo.svg" className="menu-item-icon"/>

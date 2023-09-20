@@ -1,9 +1,9 @@
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import Login from '../pages/login/Login';
-import InLoginLayout from '../components/layouts/InLoginLayout';
 import TopMyPage from '../pages/top-my-page/TopMyPage';
 import MyRecord from '../pages/my-record/MyRecord';
 import Column from '../pages/column/Column';
+import InLoginLayout from '../components/layouts/in-login-layout/InLoginLayout';
 function Router() {
 
     return <BrowserRouter>

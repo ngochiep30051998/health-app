@@ -1,0 +1,6 @@
+@import '../../../../public/assets/scss/variables';
+
+.app-body {
+    height: $footer-height;
+    min-height: calc(100vh - $footer-height - $header-height);
+}

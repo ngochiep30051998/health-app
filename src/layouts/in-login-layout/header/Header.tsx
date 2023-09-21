@@ -3,8 +3,8 @@ import './Header.scss';
 export default function Header() {
     return (
         <header>
-            <nav className="px-4 lg:px-6  bg-dark-500 h-16">
-                <div className="flex flex-wrap justify-around items-center mx-auto max-w-screen-xl">
+            <nav className="px-4 lg:px-40  bg-dark-500 h-16">
+                <div className="flex flex-wrap justify-between items-center max-w-screen-xl">
                     <a href="#" className="flex items-center logo">
                         <img src="/assets/images/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
                     </a>

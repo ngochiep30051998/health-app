@@ -1,24 +1,11 @@
 @import "../../../public/assets/scss/variables";
 
 .column {
+    padding-top: calc($header-height + 56px);
     .recommended-list{
         margin-bottom: 56px;
     }
     .post-list{
         margin-bottom: 26px;
-    }
-    .btn-view-more {
-        margin-bottom: 64px;
-        button {
-            background: linear-gradient(33deg, #FFCC21 8.75%, #FF963C 86.64%);
-            width: 296px;
-            height: 56px;
-            flex-shrink: 0;
-            text-align: center;
-            font-family: $font-family;
-            font-size: 18px;
-            font-style: normal;
-            line-height: 26px;
-        }
     }
 }

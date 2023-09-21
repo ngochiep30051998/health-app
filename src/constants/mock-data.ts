@@ -78,3 +78,45 @@ export const ColumnDataRecommended = [
         key:'4'
     },
 ]
+export const MealHistoryData = [
+    {
+        dateTime: '05.21.Morning',
+        image:'assets/images/m01.jpg',
+        key:'1'
+    },
+    {
+        dateTime: '05.21.Lunch',
+        image:'assets/images/l03.jpg',
+        key:'2'
+    },
+    {
+        dateTime: '05.21.Dinner',
+        image:'assets/images/d01.jpg',
+        key:'3'
+    },
+    {
+        dateTime: '05.21.Snack',
+        image:'assets/images/l01.jpg',
+        key:'4'
+    },
+    {
+        dateTime: '05.20.Morning',
+        image:'assets/images/l02.jpg',
+        key:'5'
+    },
+    {
+        dateTime: '05.20.Lunch',
+        image:'assets/images/d02.jpg',
+        key:'6'
+    },
+    {
+        dateTime: '05.20.Dinner',
+        image:'assets/images/m01.jpg',
+        key:'7'
+    },
+    {
+        dateTime: '05.21.Snack',
+        image:'assets/images/m01.jpg',
+        key:'8'
+    },
+]

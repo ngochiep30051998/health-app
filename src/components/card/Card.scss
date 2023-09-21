@@ -2,14 +2,6 @@
 
 .card {
     &-content {
-        &-image {
-            span {
-                font-family: Inter;
-                font-size: 15px;
-                font-style: normal;
-            }
-        }
-
         &-detail {
             padding-top: 4px;
 
@@ -18,7 +10,6 @@
                 font-size: 15px;
                 font-style: normal;
                 line-height: 22px;
-                /* 146.667% */
                 letter-spacing: 0.075px;
             }
 
@@ -27,7 +18,6 @@
                 font-size: 12px;
                 font-style: normal;
                 line-height: 22px;
-                /* 183.333% */
                 letter-spacing: 0.06px;
             }
         }

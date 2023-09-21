@@ -1,0 +1,17 @@
+
+.btn-icon {
+    &-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &-title {
+        text-align: center;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 24px;
+    }
+}

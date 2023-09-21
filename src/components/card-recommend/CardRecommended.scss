@@ -1,0 +1,26 @@
+@import "../../../public/assets/scss/variables";
+.card-recommend {
+    &-detail {
+        &-underline {
+            background-color: #7c7c7c;
+        }
+
+        &-title {
+            text-align: center;
+            font-family: Inter;
+            font-size: 22px;
+            font-style: normal;
+            line-height: 27px;
+            /* 122.727% */
+            letter-spacing: 0.11px;
+        }
+
+        &-description {
+            text-align: center;
+            font-family: $font-family;
+            font-size: 18px;
+            font-style: normal;
+            line-height: 26px;
+        }
+    }
+}

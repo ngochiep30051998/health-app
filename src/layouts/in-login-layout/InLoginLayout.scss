@@ -1,6 +1,6 @@
-@import '../public/assets/scss/variables';
+@import '../../../public/assets/scss/variables';
 
 .app-body {
-    height: $footer-height;
+    padding-top: calc($header-height + 56px);
     min-height: calc(100vh - $footer-height - $header-height);
 }

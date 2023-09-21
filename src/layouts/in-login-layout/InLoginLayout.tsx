@@ -5,7 +5,7 @@ import "./InLoginLayout.scss"
 export default function InLoginLayout() {
     return <div className="w-full">
         <Header />
-        <div className="w-full app-body">
+        <div className="w-full app-body px-4 lg:px-40">
             <Outlet />
         </div>
         <Footer />

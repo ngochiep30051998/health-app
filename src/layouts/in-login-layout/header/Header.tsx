@@ -6,7 +6,7 @@ export default function Header() {
         <header className="w-full">
             <nav className="px-4 lg:px-40  bg-dark-500 h-16 w-full">
                 <div className="flex flex-wrap justify-between items-center max-w-screen-xl w-full">
-                    <Link to={'#'} className="flex items-center logo">
+                    <Link to={'/'} className="flex items-center logo">
                         <img src="/assets/images/logo.png" className="mr-3 h-6 sm:h-9" alt="Logo" />
                     </Link>
 

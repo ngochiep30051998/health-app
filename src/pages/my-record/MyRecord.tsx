@@ -1,4 +1,5 @@
 
+import ButtonViewMore from "../../components/button-view-more/ButtonViewMore"
 import CardBackground from "../../components/card-background/CardBackground"
 import LineChart from "../../components/chart/LineChart"
 import "./MyRecord.scss"
@@ -37,5 +38,21 @@ export default function MyRecord() {
                 </div>
             </div>
         </section>
+        <section className="diary pb-6">
+            <p className="title">MY DIARY</p>
+            <div className="diary-list grid grid-flow-row gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
+                {Array(8).fill(null).map((_, i) => `item-${i}`).map(item => (
+                    <div className="item p-4" key={item}>
+                        <p className="item-date-time">2021.05.21<br />23:25</p>
+                        <p className="item-description">
+                            私の日記の記録が一部表示されます。
+                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト…
+                        </p>
+                    </div>
+                ))}
+
+            </div>
+        </section>
+        <ButtonViewMore/>
     </div>
 }

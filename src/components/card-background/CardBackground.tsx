@@ -1,12 +1,19 @@
 import { Link } from "react-router-dom";
 import "./CardBackground.scss";
-
-export default function CardBackground() {
-    return <div className="rounded shadow-lg shadow-gray-200 dark:shadow-gray-900 bg-white dark:bg-gray-800 duration-300 hover:-translate-y-1 h-36 card-recommend">
-        <Link to={"#"} className="cursor-pointer">
-            <div className="card-recommend-detail flex flex-col justify-center items-center h-full" style={{backgroundImage:'assets/images/MyRecommend-1.png'}}>
-                <p className="mb-4 card-recommend-detail-title color-primary-300 font-normal">BODY RECORD</p>
-                <p className="mt-4 font-light card-recommend-detail-description color-light">自分のカラダの記録</p>
+type props = {
+    image: string;
+    title: string;
+    description: string;
+}
+export default function CardBackground({description,image,title}: props) {
+    return <div className="card-background bg-primary-300 p-6">
+        <Link to={"#"} className="cursor-pointer card-background-container" >
+            <div className="card-background-detail flex flex-col justify-center items-center h-full w-full relative">
+                <img src={image} className="h-full w-full object-cover opacity-75"/>
+                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full content h-full flex justify-center items-center flex-col px-6">
+                    <span className="title color-primary-300 font-normal text-center">{title}</span>
+                    <span className="font-light description color-light color-light font-normal w-full">{description}</span>
+                </div>
             </div>
         </Link>
     </div>

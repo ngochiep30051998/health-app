@@ -1,0 +1,35 @@
+@import "../../../public/assets/scss/variables";
+.card-background {
+    aspect-ratio: 1/1;
+
+    &-container {}
+
+    &-detail {
+        .content {
+            background-color: rgba(22, 31, 22, 0.685);
+            
+            .title {
+                text-align: center;
+                font-family: Inter;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 30px;
+                /* 120% */
+                letter-spacing: 0.125px;
+            }
+
+            .description {
+                background-color: $primary-400;
+                color: #FFF;
+                text-align: center;
+                font-family: $font-family;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 20px;
+            }
+        }
+
+    }
+}

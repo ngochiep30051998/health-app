@@ -12,19 +12,19 @@ export default function Header() {
 
                     <div className="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1">
                         <ul className="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
-                            <li className="menu-item flex">
+                            <li className="menu-item flex cursor-pointer">
                                 <img src="/assets/images/icons/icon_memo.svg" className="menu-item-icon"/>
-                                <Link to={'#'} className="color-light menu-item-label" aria-current="page">自分の記録</Link>
+                                <Link to={'/my-record'} className="color-light menu-item-label" aria-current="page">自分の記録</Link>
                             </li>
-                            <li className="menu-item flex">
+                            <li className="menu-item flex cursor-pointer">
                                 <img src="/assets/images/icons/icon_challenge.svg" className="menu-item-icon"/>
-                                <Link to={'#'} className="color-light menu-item-label" aria-current="page">チャレンジ</Link>
+                                <Link to={'/top-my-page'} className="color-light menu-item-label" aria-current="page">チャレンジ</Link>
                             </li>
-                            <li className="menu-item flex">
+                            <li className="menu-item flex cursor-pointer">
                                 <img src="/assets/images/icons/icon_info.svg" className="menu-item-icon"/>
-                                <Link to={'#'} className="color-light menu-item-label" aria-current="page">お知らせ</Link>
+                                <Link to={'/column'} className="color-light menu-item-label" aria-current="page">お知らせ</Link>
                             </li>
-                            <li className="menu-item flex">
+                            <li className="menu-item flex cursor-pointer">
                                 <img src="/assets/images/icons/icon_menu.svg" className="menu-item-icon"/>
                             </li>
                         </ul>

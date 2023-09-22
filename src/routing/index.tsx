@@ -1,20 +1,27 @@
-import { BrowserRouter,  Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Login from '../pages/login/Login';
 import TopMyPage from '../pages/top-my-page/TopMyPage';
 import MyRecord from '../pages/my-record/MyRecord';
 import Column from '../pages/column/Column';
 import InLoginLayout from '../layouts/in-login-layout/InLoginLayout';
+import { PublicGuard } from '../guards/PublicGuard';
+import { PrivateGuard } from '../guards/PrivateGuard';
+import NonLoginLayout from '../layouts/NonLoginLayout';
 function Router() {
 
     return <BrowserRouter>
         <Routes>
-            <Route path="/login" element={<Login />} />
+            <Route path='/' element={<PublicGuard children={<NonLoginLayout />} />}>
+                <Route path="/login" element={<Login />} />
+                <Route path="**" element={<Login />} />
+            </Route>
 
-            <Route path="/" element={<InLoginLayout />}>
+            <Route path="/" element={<PrivateGuard children={<InLoginLayout />} />}>
                 <Route path="/" element={<Column />} />
                 <Route path="/top-my-page" element={<TopMyPage />} />
                 <Route path="/my-record" element={<MyRecord />} />
                 <Route path="/column" element={<Column />} />
+                <Route path="**" element={<Column />} />
             </Route>
         </Routes>
     </BrowserRouter>

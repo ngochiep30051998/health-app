@@ -6,7 +6,7 @@ type props = {
     description: string;
 }
 export default function CardBackground({description,image,title}: props) {
-    return <div className="card-background bg-primary-300 p-6">
+    return <div className="card-background bg-primary-300 p-6 aspect-square">
         <Link to={"#"} className="cursor-pointer card-background-container" >
             <div className="card-background-detail flex flex-col justify-center items-center h-full w-full relative">
                 <img src={image} className="h-full w-full object-cover opacity-75"/>

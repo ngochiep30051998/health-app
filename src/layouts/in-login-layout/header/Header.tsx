@@ -1,18 +1,25 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Header.scss';
 import { Drawer } from '../drawer/Drawer';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import MobileDrawer from '../mobile-drawer/MobileDrawer';
 
 export default function Header() {
     const [showDrawer, setShowDrawer] = useState(false);
     const [showDrawerMobile, setShowDrawerMobile] = useState(false);
-    const handleDrawer = ()=>{
-        setShowDrawer(currentValue=> !currentValue)
+    const handleDrawer = () => {
+        setShowDrawer(currentValue => !currentValue)
     }
-    const handleDrawerMobile = ()=>{
-        setShowDrawerMobile(currentValue=> !currentValue)
+    const handleDrawerMobile = () => {
+        setShowDrawerMobile(currentValue => !currentValue)
     }
+    const location = useLocation();
+
+    useEffect(() => {
+        console.log('Location changed');
+        setShowDrawer(false);
+        setShowDrawerMobile(false);
+    }, [location]);
     return (
         <header className="w-full">
             <nav className="px-4 lg:px-40  bg-dark-500 h-16 w-full">

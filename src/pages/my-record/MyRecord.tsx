@@ -15,7 +15,7 @@ export default function MyRecord() {
         <section className="line-chart h-72 mb-14">
             <LineChart />
         </section>
-        <section className="mb-14 h-72 exercise-record bg-dark-500">
+        <section className="mb-14 max-h-72 exercise-record bg-dark-500">
             <div className="table w-full p-6">
                 <div className="table-header flex">
                     <div className="table-name color-light font-normal">
@@ -23,8 +23,17 @@ export default function MyRecord() {
                     </div>
                     <span className="table-date color-light font-normal">2021.05.21</span>
                 </div>
-                <div className="table-content grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2">
-                    <div ></div>
+                <div className="table-content grid grid-flow-row sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 max-h-48 overflow-y-auto">
+
+                    {Array(50).fill(null).map((_, i) => `item-${i}`).map(item => (
+                        <div className="item flex justify-between mr-5" key={item}>
+                            <div className="title">
+                                <li className="color-light">家事全般（立位・軽い</li>
+                                <p className="pl-4 color-primary-300">26kcal</p>
+                            </div>
+                            <span className="color-primary-300">10 min</span>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>

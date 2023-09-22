@@ -27,7 +27,7 @@ export default function TopMyPage() {
                 <ButtonIcon icon="public/assets/images/icons/eat-ic.svg" title="Dinner" key={'Dinner'}/>
                 <ButtonIcon icon="public/assets/images/icons/snack.svg" title="Snack" key={'Snack'}/>
         </section>
-        <section className="meal-history container mx-auto px-40 pt-6">
+        <section className="meal-history container mx-auto md:px-40 pt-6">
             <div className="grid grid-flow-row gap-4 text-neutral-600 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4">
                 {
                     MealHistoryData.map(item => {

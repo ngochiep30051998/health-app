@@ -22,12 +22,16 @@ ChartJS.register(
 
 export const options = {
     responsive: true,
+
     plugins: {
         legend: {
             display: false
         },
         title: {
             display: false,
+        },
+        customCanvasBackgroundColor: {
+            color: 'black',
         },
     },
 };

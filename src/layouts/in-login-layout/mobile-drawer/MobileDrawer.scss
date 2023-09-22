@@ -1,0 +1,26 @@
+.drawer-mobile {
+    &-container {
+        .list {
+            background-color: #777777;
+
+            li {
+                height: 72px;
+                color: #FFF;
+                font-family: Hiragino Kaku Gothic Pro;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 26px;
+                border: 1px solid #8b8b8b;
+            }
+        }
+
+        .close-item {
+            &-icon {
+                background-color: #414141;
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}

@@ -11,17 +11,20 @@ function Router() {
 
     return <BrowserRouter>
         <Routes>
+
+            <Route element={<InLoginLayout />} path='/column' >
+                <Route path="" element={<Column />} />
+            </Route>
+
             <Route path='/' element={<PublicGuard children={<NonLoginLayout />} />}>
                 <Route path="/login" element={<Login />} />
-                <Route path="**" element={<Login />} />
+                <Route path="*" element={<Login />} />
             </Route>
 
             <Route path="/" element={<PrivateGuard children={<InLoginLayout />} />}>
-                <Route path="/" element={<Column />} />
+                <Route path="/" element={<TopMyPage />} />
                 <Route path="/top-my-page" element={<TopMyPage />} />
                 <Route path="/my-record" element={<MyRecord />} />
-                <Route path="/column" element={<Column />} />
-                <Route path="**" element={<Column />} />
             </Route>
         </Routes>
     </BrowserRouter>

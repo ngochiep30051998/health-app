@@ -4,6 +4,7 @@ import Card from "../../components/card/Card";
 import { ColumnData, ColumnDataRecommended } from "../../constants/mock-data";
 import "./Column.scss"
 export default function Column() {
+    console.log('Column')
     return (
         <div className="w-full column px-4 lg:px-40">
             <section className="recommended-list">

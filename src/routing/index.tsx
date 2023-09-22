@@ -8,7 +8,7 @@ function Router() {
 
     return <BrowserRouter>
         <Routes>
-            <Route path="/dang-nhap" element={<Login />} />
+            <Route path="/login" element={<Login />} />
 
             <Route path="/" element={<InLoginLayout />}>
                 <Route path="/" element={<Column />} />

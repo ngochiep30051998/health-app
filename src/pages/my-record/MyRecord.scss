@@ -1,5 +1,34 @@
-.line-chart{
-    canvas{
-        width: 100% !important;
+@import "../../../public/assets/scss/variables";
+
+.my-record {
+    .line-chart {
+        canvas {
+            width: 100% !important;
+        }
+    }
+
+    .exercise-record {
+        .table {
+            &-header {}
+
+            &-name {
+                font-family: Inter;
+                font-size: 15px;
+                font-style: normal;
+                line-height: 18px;
+                /* 120% */
+                letter-spacing: 0.15px;
+                width: 10%;
+            }
+
+            &-date {
+                font-family: Inter;
+                font-size: 22px;
+                font-style: normal;
+                line-height: 27px;
+                /* 122.727% */
+                letter-spacing: 0.11px;
+            }
+        }
     }
 }
